@@ -11,7 +11,12 @@ export const SocketContextProvider = ({ children }) => {
   const { authUser } = useAuthContext()
   useEffect(() => {
     if (authUser) {
-      const socket = io('http://localhost:5000', {
+      // const socket = io('http://localhost:5000', {
+      //   auth: {
+      //     userId: authUser._id
+      //   }
+      // })
+      const socket = io('https://nxsag-chat-app.onrender.com', {
         query: {
           userId: authUser._id
         }

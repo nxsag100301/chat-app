@@ -55,9 +55,7 @@ const Login = () => {
               >
                 {`Don't`} have an account?
               </Link>
-              <div className='btn btn-block btn-primary mt-2'>
-                <button>Login</button>
-              </div>
+              <button className='btn btn-block btn-primary mt-2'>Login</button>
             </form>
           </div>
         </div>
